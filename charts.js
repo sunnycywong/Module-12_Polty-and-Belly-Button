@@ -99,19 +99,18 @@ function buildCharts(sample) {
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
-  });
-}
+//   });
+// }
 
 // DELIVERABLE 2 Requirements
 // Bar and Bubble charts
 // Create the buildCharts function.
-function buildCharts(sample) {
+// function buildCharts(sample) {
   // Use d3.json to load and retrieve the samples.json file 
-  d3.json("samples.json").then((data) => {
-    
+  // d3.json("samples.json").then((data) => {
 
     // Deliverable 1 Step 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot(); 
+    // Plotly.newPlot(); 
 
     // 1. Create the trace for the bubble chart.
     var bubbleData = [{
@@ -138,14 +137,15 @@ function buildCharts(sample) {
 
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
-  });
-}
+//   });
+// }
+
 
 // DELIVERABLE 3 Requirements
 // Create the buildChart function.
-function buildCharts(sample) {
+// function buildCharts(sample) {
   // Use d3.json to load the samples.json file 
-  d3.json("samples.json").then((data) => {
+  // d3.json("samples.json").then((data) => {
     console.log(data);
 
     // Create a variable that holds the samples array. 
@@ -171,11 +171,11 @@ function buildCharts(sample) {
 
     // Create the yticks for the bar chart.
 
-    // Use Plotly to plot the bar data and layout.
-    Plotly.newPlot();
+    // // Use Plotly to plot the bar data and layout.
+    // Plotly.newPlot();
     
-    // Use Plotly to plot the bubble data and layout.
-    Plotly.newPlot();
+    // // Use Plotly to plot the bubble data and layout.
+    // Plotly.newPlot();
    
     
     // 4. Create the trace for the gauge chart.
@@ -210,3 +210,4 @@ function buildCharts(sample) {
     Plotly.newPlot("gauge", gaugeData, gaugeLayout);
   });
 }
+
